@@ -5,6 +5,7 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -24,10 +25,14 @@ public class Main extends Application {
         log.info("Starting Hello JavaFX and Maven demonstration application");
         String fxmlFile = "/fxml/hello.fxml";
         log.debug("Loading FXML for main view from: {}", fxmlFile);
+
+        //GridPane
         Parent root = FXMLLoader.load(getClass().getResource(fxmlFile));
-        primaryStage.setTitle("Sekolah App.");
-        Scene scene = new Scene(root, 400, 200);
+
+        Scene scene = new Scene(root,300, 275);
         scene.getStylesheets().add("/styles/styles.css");
+
+        primaryStage.setTitle("Sekolah App.");
         primaryStage.setScene(scene);
         primaryStage.show();
     }
