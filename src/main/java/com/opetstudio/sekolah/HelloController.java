@@ -16,4 +16,7 @@ public class HelloController {
         log.debug("sayHelloWorld");
         helloWorld.setText("Hellow World!");
     }
+
+    public void handleSubmitButtonAction(ActionEvent actionEvent) {
+    }
 }
