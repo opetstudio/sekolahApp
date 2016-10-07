@@ -6,4 +6,4 @@ Aplikasi desktop menggunakan javaFx.
 mvn clean compile assembly:single
 # run
 - export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_73.jdk/Contents/Home/
-- java -jar target/jfx8-app-jar-with-dependencies.jar
+- java -jar target/SekolahApp-jar-with-dependencies.jar
